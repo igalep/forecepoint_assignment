@@ -12,13 +12,11 @@ from src.playwright.pom.form_section import FormSection
 class TestAssignment:
     def test_count_buttons(self, setup):
         bs = ButtonSection(setup)
-        setup.screenshot(path='button.png')
         size = bs.count_buttons()
-        assert size > 10
+        assert size == 12
 
 
     def test_count_href(self, setup):
-        setup.screenshot(path='href.png')
         hrf = HrefSection(setup)
 
         li_count = hrf.count_li()
