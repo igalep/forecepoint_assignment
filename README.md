@@ -45,5 +45,9 @@ Run all : pytest -v (from the root directory)
 Run happy flow: pytest -v -m positive (from the root directory)
 Run negative flow: pytest -v -m negative (from the root directory)
 
-
+***
+Inorder to run the tests in headless mode pls update the following line in confitest.py file
+    browser = playwright.chromium.launch(headless=False)
+***
+Inorder to generate html report please add --html-report=./report to the execution command -> *pytest -v --html-report=./report*
 
