@@ -35,3 +35,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+    """
+    Main cases to test:
+    1. all rides approved - in external_service_mock.py return 'ride_request' instead approved_rides
+    2. Not enough rides approved (less than 100)
+    3. partial approval + fair distribution
+    4. Optimal distribution (full fill chunk of 100 rides) - works with errors  
+    """
