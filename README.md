@@ -1,7 +1,23 @@
 # forcepoint_assignment
 First Part
 Python task - Rides allocation (no special libraries required)
-run the code using the following command: python3 rides_allocation.py
+
+Run the code using the following command: python3 rides_allocation.py
+In order to change the input pls update requested_rides.csv in resources folder
+The output file located in resources folder as well
+
+    """
+    Main cases to test:
+    1. all rides approved - in external_service_mock.py return 'ride_request' instead approved_rides
+    2. Not enough rides approved (less than 100)
+    3. partial approval + fair distribution
+    4. Optimal distribution (full fill chunk of 100 rides) - works with errors  
+    """
+
+
+
+
+
 
 
 
