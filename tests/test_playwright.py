@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Add the parent directory of 'src' to the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from src.playwright.pom.button_section import ButtonSection
 from src.playwright.pom.href_section import HrefSection
 from src.playwright.pom.form_section import FormSection
